@@ -1,9 +1,9 @@
-package ddudooo.adventofcode2023.day1
+package ddudooo.adventofcode2023.day1.part1
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Day1SolutionTest {
+class Day1Part1SolutionTest {
 
     @Test
     fun solutionSample() {
@@ -13,7 +13,7 @@ class Day1SolutionTest {
             "a1b2c3d4e5f",
             "treb7uchet",
         )
-        val solution = Day1Solution()
+        val solution = Day1Part1Solution()
         assertEquals(142, solution.solution(lines))
     }
 }
