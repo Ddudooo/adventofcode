@@ -15,7 +15,7 @@ class Day1Part2SolutionTest {
             "zoneight234",
             "7pqrstsixteen",
         )
-        val solution = Day2Solution()
+        val solution = Day1Part2Solution()
         assertEquals(281, solution.solution(lines))
     }
 }
