@@ -1,6 +1,6 @@
 package ddudooo.adventofcode2023.day1
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class Day1SolutionTest {
