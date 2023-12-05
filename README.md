@@ -2,4 +2,4 @@
 
 
 ### ref
-- [AdventOfCode](https://adventoofcode.com)
+- [AdventOfCode](https://adventofcode.com/)
