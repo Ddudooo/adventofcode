@@ -1,9 +1,9 @@
-package ddudooo.adventofcode2023.day2.part1
+package ddudooo.adventofcode2023.day2.part2
 
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 
-class Day2Part1SolutionTest {
+class Day2Part2SolutionTest {
     @Test
     fun solutionSample() {
         val lines = listOf(
@@ -13,7 +13,7 @@ class Day2Part1SolutionTest {
             "Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red",
             "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green",
         )
-        val solution = Day2Part1Solution()
-        assertEquals(8, solution.solution(lines))
+        val solution = Day2Part2Solution()
+        assertEquals(2286, solution.solution(lines))
     }
 }
