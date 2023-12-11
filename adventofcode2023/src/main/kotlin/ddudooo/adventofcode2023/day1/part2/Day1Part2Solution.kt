@@ -20,12 +20,7 @@ class Day1Part2Solution {
 
     private fun convertLine(line: String): Int {
         return line.indices.mapNotNull { idx ->
-            val find = findDigit(line, idx)
-            if (find < -1) {
-                line[idx].digitToIntOrNull()
-            } else {
-                find
-            }
+            findDigit(line, idx).takeIf { it > -1 } ?: line[idx].digitToIntOrNull()
         }.let { it.first() * 10 + it.last() }
     }
 
