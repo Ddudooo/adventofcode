@@ -8,10 +8,10 @@ class Day2Part1Solution(maxRed: Int = 12, maxGreen: Int = 13, maxBlue: Int = 14)
     }
 
     private fun game(line: String): Int {
-        return parseLise(line).takeIf { it.isNotOver(limitGame) }?.gameNumber ?: 0
+        return parseLine(line).takeIf { it.isNotOver(limitGame) }?.gameNumber ?: 0
     }
 
-    private fun parseLise(line: String): Games {
+    private fun parseLine(line: String): Games {
         val games = line.substringAfter(": ").split("; ").map { game -> parseGame(game) }.toList()
         val gameNumber = line.substringBefore(": ").substringAfter(" ").toInt()
         return Games(gameNumber, games)
